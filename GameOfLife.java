@@ -24,6 +24,9 @@ public class GameOfLife implements Board {
 
     // Run the simulation for a number of turns
     public void run(int turns) {
+        for (int i=0; i<turns; i++) {
+            step();
+        }
         // call step the number of times requested
     }
 
