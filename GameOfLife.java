@@ -83,23 +83,14 @@ public class GameOfLife implements Board {
         // Print the header
         System.out.print("\n ");
         for (int y = 0; y < board[0].length; y++) {
-            System.out.print(y%10 + " ");
+            System.out.print(y % 10 + " ");
         }
 
         for (int x = 0; x < board.length; x++) {
-            System.out.print("\n" + x%10);
-            for (int y=0; y<board[x].length; y++)
-            {
-                if (board[x][y] == 1)
-                {
-                    System.out.print("⬛");
-                }
-                else
-                {
-                    System.out.print("⬜");
-                }
+            System.out.print("\n" + x % 10);
+            for (int y = 0; y < board[x].length; y++) {
+                System.out.print(board[x][y] == 1 ? "⬛" : "⬜"); //rearranging bc its easier for me to see
             }
-        }
         System.out.println();
     }
 }
