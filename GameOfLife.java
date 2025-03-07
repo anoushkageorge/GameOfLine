@@ -8,6 +8,8 @@ public class GameOfLife implements Board {
 
     public GameOfLife(int x, int y)
     {
+        board = new int[x][y];
+        tempboard = new int[x][y]; // initializing temporary board
         // Construct a 2d array of the given x and y size.
     }
 
